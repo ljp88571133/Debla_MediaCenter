@@ -1,0 +1,45 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="4"
+    android:background="@drawable/launcher_background">
+    
+    <RelativeLayout
+        android:id="@+id/LayoutApplicationLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:layout_gravity="center_horizontal" >
+        
+        <ImageView
+            android:id="@+id/ImageViewAppLogoOuter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:contentDescription="@string/launcher_company_logo_content_desc"
+            android:src="@drawable/launcher_app_logo_outer" />
+        
+        <ImageView
+            android:id="@+id/ImageViewAppLogoInner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            android:contentDescription="@string/launcher_company_logo_content_desc"
+            android:src="@drawable/launcher_app_logo_inner" />
+        
+    </RelativeLayout>
+    
+    <ImageView 
+        android:id="@+id/ImageViewCompanyLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/launcher_company_logo_margin_bottom"
+        android:contentDescription="@string/launcher_company_logo_content_desc"
+        android:src="@drawable/launcher_company_logo" />
+
+</LinearLayout>
